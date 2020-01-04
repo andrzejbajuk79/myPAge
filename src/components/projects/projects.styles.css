@@ -1,0 +1,23 @@
+.project-container {
+	
+	display: inline-block ;
+	width:500px;
+	margin: 5px auto;
+
+}
+
+.image {
+
+	width: 100%;
+	height: 95%;
+	background-size: cover;
+	background-position: center;
+	margin-bottom: 5px;
+}
+.image-container {
+	margin:  0 auto;
+	width: 200px;
+	height: 120px;
+}
+.description {
+}
