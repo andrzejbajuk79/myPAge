@@ -1,11 +1,16 @@
 import project1 from '../assets/e-commerce.PNG';
 import project2 from '../assets/project2.png';
 import project3 from '../assets/project3.png';
+import resturacja from '../assets/resturacja.png';
+import tools  from '../assets/tools.png';
+import sound from '../assets/sound.png';
+import slider from '../assets/slider.png';
+
 
 const PROJECTS = [
 	{
 		id: 1,
-		title: 'Example E-Commerce SHOP',
+		title:  'E-Commerce SHOP-Redux',
 		description: 'Appka przy użyciu czystego Reacta',
 		heroku: 'https://heroku-e-commerce-shop.herokuapp.com',
 		github: 'https://github.com/andrzejbajuk79/e_commerce-shop',
@@ -13,35 +18,35 @@ const PROJECTS = [
 	},
 	{
 		id: 2,
-		title: 'My API',
-		description: 'Appka przy użyciu czystego Reacta',
-		heroku: '',
-		github: 'https://github.com/andrzejbajuk79/e_commerce-shop',
-		image: project2
+		title: 'Sound Master',
+		description: 'wyszykiwarka muzyki za pomoca SpotifyAPI',
+		heroku: 'https://heroku-e-sound-master.herokuapp.com',
+		github: 'https://github.com/andrzejbajuk79/music-app-React',
+		image:  sound 
 	},
 	{
 		id: 3,
-		title: 'Operating System Final Project',
-		description: 'Appka przy użyciu czystego Reacta',
+		title: 'E-Commerce SHOP-Angular',
+		description: 'angular',
 		heroku: '',
-		github: 'https://github.com/andrzejbajuk79/e_commerce-shop',
-		image: project3
+		github: 'https://github.com/andrzejbajuk79/Angular2-product-list',
+		image: tools 
 	},
 	{
 		id: 4,
-		title: 'My API',
+		title: 'Restaurant',
 		description: 'Appka przy użyciu czystego Reacta',
 		heroku: '',
-		github: 'https://github.com/andrzejbajuk79/e_commerce-shop',
-		image: project2
+		github: 'https://github.com/andrzejbajuk79/Restaurant--simple-page',
+		image: resturacja
 	},
 
 	{
 		id: 5,
-		title: 'Operating System Final Project',
+		title: 'Slider Pure CSS',
 		description: 'Appka przy użyciu czystego Reacta',
 		heroku: '',
-		github: 'https://github.com/andrzejbajuk79/e_commerce-shop',
+		github: 'https://github.com/andrzejbajuk79/slider-pure-css',
 		image: project3
 	},
 	{
