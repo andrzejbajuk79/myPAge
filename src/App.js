@@ -23,8 +23,8 @@ class App extends Component {
 				<Title />
 				<p>
 					Z wykształcenia technolog żywnośći, z wyboru - programista .Kodowanie
-					daje mi wiele satysfakcji, <br />i w mojej przyszlej pracy chciałbym
-					mieć kontakt z ludźmi, od których mogłbym czerpać wiedzę i świeże
+					daje mi wiele satysfakcji, <br />i w mojej przyszłej pracy chciałbym
+					mieć kontakt z ludźmi, od których mógłbym czerpać wiedzę i świeże
 					pomysły,
 				</p>
 				{this.state.displayBio ? (

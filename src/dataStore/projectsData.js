@@ -27,7 +27,7 @@ const PROJECTS = [
 	{
 		id: 3,
 		title: 'E-Commerce SHOP-Angular',
-		description: 'apka sklepu, dodawani, usuwanie koszyka zakupów',
+		description: 'apka sklepu, dodawanie, usuwanie koszyka zakupów',
 		github: 'https://github.com/andrzejbajuk79/Angular2-product-list',
 		image: tools 
 	},
@@ -42,7 +42,7 @@ const PROJECTS = [
 	{
 		id: 5,
 		title: 'Slider Pure CSS',
-		description: 'pomysł zaczerpnięty od kogoś, próba stworzenia slidera w czystym CSSIe',
+		description: 'próba stworzenia slidera w czystym CSSIe',
 		github: 'https://github.com/andrzejbajuk79/slider-pure-css',
 		image: slider
 	}
