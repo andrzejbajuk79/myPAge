@@ -17,9 +17,11 @@ const Project = props => {
 				Github source
 			</a>
 			<br />
-			<a className="link" href={heroku}>
-				Heroku source
-			</a>
+			{heroku ? (
+				<a className="link" href={heroku}>
+					Heroku source
+				</a>
+			) : null}
 		</div>
 	);
 };

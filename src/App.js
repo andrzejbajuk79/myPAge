@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import './index.css';
 
+
 import Projects from './components/projects/projects.component';
 import SocialProfile from './components/socialProfiles/socialProfiles.component';
 import Title from './components/title/titleComponent';
@@ -18,19 +19,24 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				
 				<h1>Hello!</h1>
-				<p>My name is David.</p>
+				<p>Nazywam się Andrzej</p>
 				<Title />
-				<p>I'm always looking forward to working on meaningful projects.</p>
+				<p>
+					kodowanie daje mi wiele satysfakcji i chciałbym być w kontakcie
+					<br /> z nowymi technologiami oraz ludźmi, od których mogę czerpać
+					wiedzę i świeże pomysły..
+				</p>
 				{this.state.displayBio ? (
 					<div>
 						<p>
 							{' '}
-							Nazywam sie Andrzej, jestem Developerem, poniżej przedstawiam moje
-							portfolio
+							Obecnie pracuję jako ABAP developer w firmie consultingowej
+							świadczącej usługi dla firm korzystających z systemów SAP.
+							<br /> W wolnym czasie staram realizować również własne projekty
+							aplikacji typu SinglePage. Interesują mnie zwłaszcza technologie
+							takie jak REACT,Angular, Typescript . .
 						</p>
-						<p>Zawsze szukam nowych wyzwan, projektów</p>
 						<button onClick={this.togglesDisplayBio} className="btn btn-info">
 							Ukryj
 						</button>
@@ -43,12 +49,11 @@ class App extends Component {
 				<hr />
 				<Projects />
 				<hr />
-	
+
 				<SocialProfile />
 			</div>
 		);
 	}
 }
 
-export default App ;
-
+export default App;

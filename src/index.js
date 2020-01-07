@@ -3,6 +3,8 @@ import ReactDom from 'react-dom';
 import { Router, Switch, Route } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
+
+
 import Header  from './components/header/header.component'
 import Jokes from './components/jokes/jokes';
 import Form from './components/form/form.component';
@@ -22,6 +24,7 @@ ReactDom.render(
 			<Route path="/monsters" render={()=><Header ><Monsters/></Header>}/>
 			{/* <Route path="/shop" render={()=><Header ><Shop/></Header>}/> */}
 			<Route path="/contact"render={()=><Header ><Form/></Header>}/>
+	
 		</Switch>
 	</Router>,
 	document.getElementById('root')

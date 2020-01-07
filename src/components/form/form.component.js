@@ -1,69 +1,67 @@
-import React,{Component} from 'react'
-class Form extends React.Component {
-  constructor(props) {
-	super(props);
-	this.state = {
-  	name: '',
-  	email: '',
-  	message: ''
+import React, { Component } from 'react';
+import axios from 'axios';
+import { email } from '../../dataStore/mail';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+
+class FormPage extends Component {
+	constructor() {
+		super();
+		this.state = {
+			name: '',
+			email: '',
+			message: ''
+		};
+		//this.handlesubmit = this.handlesubmit.bind(this);
 	}
-  }
+	handleChange = e => {
+		this.setState({ [e.target.name]: e.target.value });
+		console.log(this.state);
+	};
+	handleChange = e => {
+		this.setState({ [e.target.name]: e.target.value });
+		console.log(this.state);
+	};
+	async componentDidMount() {
+		this.handlesubmit = e => {
+			//e.preventDefault();
+			const { name, email, message } = this.state;
+			const dataToSubmit = { name, email, message };
+			//  const form = await axios.post('api/form', dataToSubmit);
+			axios.post('api/form', dataToSubmit).then(response => {
+				if (response.data.msg === 'success') {
+					alert('Email sent, awesome!');
+					this.resetForm();
+				} else if (response.data.msg === 'fail') {
+					alert('Oops, something went wrong. Try again');
+				}
+			});
+		};
+	}
 
-render() {
- return(
-   <div className="App">
-   <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
-    <div className="form-group">
-        <label htmlFor="name">Name</label>
-        <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
-    </div>
-    <div className="form-group">
-        <label htmlFor="exampleInputEmail1">Email address</label>
-        <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
-    </div>
-    <div className="form-group">
-        <label htmlFor="message">Message</label>
-        <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
-    </div>
-    <button type="submit" className="btn btn-primary">Submit</button>
-    </form>
-    </div>
- );
+	render() {
+		return (
+			<Form className="form" action={email} method="POST">
+				<FormGroup>
+					<Label for="name">Name:</Label>
+					<Input type="text" name="name" onChange={this.handleChange} />
+				</FormGroup>
+				<FormGroup>
+					<Label for="email">Email:</Label>
+					<Input type="email" name="email" onChange={this.handleChange} />
+				</FormGroup>
+				<FormGroup>
+					<Label for="name">Message:</Label>
+					<Input
+						type="textarea"
+						rows="18"
+						name="message"
+						onChange={this.handleChange}
+					/>
+				</FormGroup>
+				<Button type="submit"> Wyslij</Button>
+			</Form>
+		);
+	}
 }
 
-  onNameChange(event) {
-	this.setState({name: event.target.value})
-  }
-
-  onEmailChange(event) {
-	this.setState({email: event.target.value})
-  }
-
-  onMessageChange(event) {
-	this.setState({message: event.target.value})
-  }
-
-  handleSubmit(e) {
-    
-
-    fetch('http://localhost:3002/send',{
-        method: "POST",
-        body: JSON.stringify(this.state),
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-      }).then(
-    	(response) => (response.json())
-       ).then((response)=>{
-      if (response.status === 'success'){
-        alert("Message Sent."); 
-        this.resetForm()
-      }else if(response.status === 'fail'){
-        alert("Message failed to send.")
-      }
-    })
-  }
-}
-
-export default Form;
+export default FormPage;

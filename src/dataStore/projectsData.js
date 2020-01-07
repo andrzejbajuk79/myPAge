@@ -28,7 +28,6 @@ const PROJECTS = [
 		id: 3,
 		title: 'E-Commerce SHOP-Angular',
 		description: 'angular',
-		heroku: '',
 		github: 'https://github.com/andrzejbajuk79/Angular2-product-list',
 		image: tools 
 	},
@@ -36,7 +35,6 @@ const PROJECTS = [
 		id: 4,
 		title: 'Restaurant',
 		description: 'Appka przy użyciu czystego Reacta',
-		heroku: '',
 		github: 'https://github.com/andrzejbajuk79/Restaurant--simple-page',
 		image: resturacja
 	},
@@ -45,9 +43,8 @@ const PROJECTS = [
 		id: 5,
 		title: 'Slider Pure CSS',
 		description: 'Appka przy użyciu czystego Reacta',
-		heroku: '',
 		github: 'https://github.com/andrzejbajuk79/slider-pure-css',
-		image: project3
+		image: slider
 	},
 	{
 		id: 6,
