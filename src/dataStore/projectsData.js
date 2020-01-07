@@ -11,7 +11,7 @@ const PROJECTS = [
 	{
 		id: 1,
 		title:  'E-Commerce SHOP-Redux',
-		description: 'Appka przy użyciu czystego Reacta',
+		description: 'apka przy użyciu czystego Reacta',
 		heroku: 'https://heroku-e-commerce-shop.herokuapp.com',
 		github: 'https://github.com/andrzejbajuk79/e_commerce-shop',
 		image: project1
@@ -19,7 +19,7 @@ const PROJECTS = [
 	{
 		id: 2,
 		title: 'Sound Master',
-		description: 'wyszykiwarka muzyki za pomoca SpotifyAPI',
+		description: 'wyszukiwarka muzyki za pomoca SpotifyAPI',
 		heroku: 'https://heroku-e-sound-master.herokuapp.com',
 		github: 'https://github.com/andrzejbajuk79/music-app-React',
 		image:  sound 
@@ -27,14 +27,14 @@ const PROJECTS = [
 	{
 		id: 3,
 		title: 'E-Commerce SHOP-Angular',
-		description: 'angular',
+		description: 'apka sklepu, dodawani, usuwanie koszyka zakupów',
 		github: 'https://github.com/andrzejbajuk79/Angular2-product-list',
 		image: tools 
 	},
 	{
 		id: 4,
 		title: 'Restaurant',
-		description: 'Appka przy użyciu czystego Reacta',
+		description: "...dużo w HTML-u",
 		github: 'https://github.com/andrzejbajuk79/Restaurant--simple-page',
 		image: resturacja
 	},
@@ -42,18 +42,11 @@ const PROJECTS = [
 	{
 		id: 5,
 		title: 'Slider Pure CSS',
-		description: 'Appka przy użyciu czystego Reacta',
+		description: 'pomysł zaczerpnięty od kogoś, próba stworzenia slidera w czystym CSSIe',
 		github: 'https://github.com/andrzejbajuk79/slider-pure-css',
 		image: slider
-	},
-	{
-		id: 6,
-		title: 'Example E-Commerce SHOP',
-		description: 'Appka przy użyciu czystego Reacta',
-		heroku: 'https://heroku-e-commerce-shop.herokuapp.com',
-		github: 'https://github.com/andrzejbajuk79/e_commerce-shop',
-		image: project1
 	}
+
 	
 ];
 

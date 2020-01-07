@@ -4,8 +4,7 @@ const TITLES = [
   'Lubię czasami ucieć z miasta w góry albo do lasu',
   'Zawsze znajdę czas żeby obejrzec dobry film',
   '....... albo przeczytać dobrą książkę',
-  'a tak poza tym  zwyczajny  czlowiek z malego miasteczka na wschodzie Wlodawa ',
-  '..polecam rejony swoją drogą'
+ 
 ];
 
 class Title extends Component {

@@ -21,7 +21,7 @@ ReactDom.render(
       <Route exact path="/" render={()=><Header ><App/></Header>} />
 			<Route path="/jokes" render={()=><Header ><Jokes/></Header>}/>
 			<Route path="/music-master" render={()=><Header ><MusicMaster/></Header>}/>
-			<Route path="/monsters" render={()=><Header ><Monsters/></Header>}/>
+			{/* <Route path="/monsters" render={()=><Header ><Monsters/></Header>}/> */}
 			{/* <Route path="/shop" render={()=><Header ><Shop/></Header>}/> */}
 			<Route path="/contact"render={()=><Header ><Form/></Header>}/>
 	

@@ -13,12 +13,12 @@ const Project = props => {
 				<img className="image" src={image} alt="profile" />
 			</div>
 			<p className="description">{description}</p>
-			<a className="link" href={github}>
+			<a className="link" href={github} target="_blank">
 				Github source
 			</a>
 			<br />
 			{heroku ? (
-				<a className="link" href={heroku}>
+				<a className="link" href={heroku} target="_blank">
 					Heroku source
 				</a>
 			) : null}

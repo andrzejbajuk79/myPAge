@@ -24,15 +24,7 @@ const Header = props => {
 				<h3 style={style}>
 					{' '}
 					<Link to="/music-master">Music App</Link>
-				</h3>
-				<h3 style={style}>
-					{' '}
-					<Link to="/monsters">Monsters</Link>
-				</h3>
-				{/* <h3 style={style}>
-					{' '}
-					<Link to="/shop">shop</Link>
-				</h3> */}
+				</h3>		
 				<h3 style={style}>
 					<Link to="/contact">Kontakt</Link>
 				</h3>
